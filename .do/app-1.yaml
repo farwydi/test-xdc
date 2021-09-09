@@ -1,11 +1,11 @@
 name: test-xdc-landing-1
 region: ams
 static_sites:
-  - github:
-      branch: main
-      repo: farwydi/test-xdc
-      deploy_on_push: true
-    name: landing-1
-    routes:
-      - path: /
-    source_dir: land1
+- github:
+    branch: main
+    repo: farwydi/test-xdc
+    deploy_on_push: true
+  name: landing-1
+  routes:
+  - path: /
+  source_dir: land1

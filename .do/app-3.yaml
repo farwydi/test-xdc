@@ -1,19 +1,19 @@
 name: test-xdc-ads
 region: ams
 services:
-  - cors:
-      allow_credentials: true
-      allow_origins:
-        - exact: https://test-xdc-landing-2-o2upu.ondigitalocean.app
-        - exact: https://test-xdc-landing-1-jb2az.ondigitalocean.app
-    github:
-      branch: main
-      repo: farwydi/test-xdc
-      deploy_on_push: true
-    http_port: 8080
-    instance_count: 1
-    instance_size_slug: professional-xs
-    name: ads
-    routes:
-      - path: /
-    source_dir: ads
+- cors:
+    allow_credentials: true
+    allow_origins:
+    - exact: https://test-xdc-landing-2-o2upu.ondigitalocean.app
+    - exact: https://test-xdc-landing-1-jb2az.ondigitalocean.app
+  github:
+    branch: main
+    repo: farwydi/test-xdc
+    deploy_on_push: true
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: professional-xs
+  name: ads
+  routes:
+  - path: /
+  source_dir: ads
