@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/touch", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		touchCookie, err := r.Cookie("touch")
 		if errors.Is(err, http.ErrNoCookie) {
 			expire := time.Now().AddDate(0, 0, 1)
