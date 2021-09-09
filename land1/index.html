@@ -5,12 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+<h1 id="touch">touch placeholder</h1>
 <script>
     fetch('https://test-xdc-ads-nrszn.ondigitalocean.app/', {
         credentials: "include"
     })
         .then(response => response.json())
-        .then(data => console.log(data));
+        .then(data => document.querySelectorAll("#touch").item(0).innerHTML = data);
 </script>
 </body>
 </html>
