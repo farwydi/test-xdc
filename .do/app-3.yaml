@@ -2,6 +2,7 @@ name: test-xdc-ads
 region: ams
 services:
   - cors:
+      allow_credentials: true
       allow_origins:
         - exact: https://test-xdc-landing-2-o2upu.ondigitalocean.app
         - exact: https://test-xdc-landing-1-jb2az.ondigitalocean.app
