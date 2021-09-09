@@ -1,0 +1,7 @@
+name: test-xdc-ads
+services:
+  - name: ads
+    github:
+      repo: farwydi/test-xdc
+      branch: main
+    source_dir: ads

@@ -1,0 +1,7 @@
+name: test-xdc-landing-2
+static_sites:
+  - name: landing-2
+    github:
+      branch: main
+      repo: farwydi/test-xdc
+    source_dir: land2

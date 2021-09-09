@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    fetch('https://ads.127.0.0.1.nip.io:8000/touch', {
+        credentials: "include"
+    })
+        .then(response => response.json())
+        .then(data => console.log(data));
+</script>
+</body>
+</html>
