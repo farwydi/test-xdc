@@ -1,7 +1,10 @@
 name: test-xdc-landing-2
+region: ams
 static_sites:
-  - name: landing-2
-    github:
+  - github:
       branch: main
       repo: farwydi/test-xdc
+    name: landing-2
+    routes:
+      - path: /
     source_dir: land2

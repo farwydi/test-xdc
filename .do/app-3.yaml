@@ -1,7 +1,13 @@
 name: test-xdc-ads
+region: ams
 services:
-  - name: ads
-    github:
-      repo: farwydi/test-xdc
+  - github:
       branch: main
+      repo: farwydi/test-xdc
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    name: ads
+    routes:
+      - path: /
     source_dir: ads
